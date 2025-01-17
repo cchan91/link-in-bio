@@ -1,3 +1,109 @@
-<h1>My homepage</h1>
-<h2>My link in bio</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link-in-Bio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <style>
+    body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      background: #88C057; /* Green color */
+      color: #000; /* Black text */
+      font-family: Arial, sans-serif;
+    }
 
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+      margin: 20px auto; /* Move profile image higher */
+      text-align: center;
+    }
+
+    .avatar-image {
+      width: 140px; /* Increased size for better visibility */
+      height: 140px;
+      object-fit: cover;
+      border-radius: 140px;
+      border: 3px solid black; /* Optional for added style */
+    }
+
+    .name-row {
+      margin: 10px auto 30px; /* Adjust spacing */
+      text-align: center;
+      font-size: 30px; /* Larger font for name */
+      font-weight: bold;
+      transform: scaleY(1.2); /* Vertical stretch */
+      font-family: Arial, sans-serif; /* Using Arial */
+    }
+
+    .links-row, .info-row {
+      margin-bottom: 20px;
+    }
+
+    .item, .info-item {
+      background-color: rgba(255, 255, 255, 0.8); /* Slight white background for contrast */
+      border-radius: 1000px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 48px;
+      margin-right: 10px;
+    }
+
+    .link-text, .info-text {
+      flex-grow: 1;
+      text-decoration: none;
+      color: #000; /* Black text */
+      text-align: center;
+      font-size: 16px; /* Make text readable */
+      transform: scaleY(1.2); /* Vertical stretch */
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="image-row">
+      <img class="avatar-image" src="IMG_1936.jpg" alt="Profile Picture">
+    </div>
+
+    <div class="name-row">
+      JC
+    </div>
+
+    <div class="links-row">
+      <div class="item">
+        <img class="thumbnail" src="unnamed.webp" alt="Spotify">
+        <a class="link-text" target="_blank" href="https://open.spotify.com/user/your-spotify-profile">
+          My Spotify
+        </a>
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-item">
+        <img class="thumbnail" src="unnamed.jpg" alt="Pokémon GO">
+        <div class="info-text">GO Trainer Code: <strong>4152 6419 3015</strong></div>
+      </div>
+
+      <div class="info-item">
+        <img class="thumbnail" src="share-fb.jpg" alt="Pokémon TCG">
+        <div class="info-text">TCG Trainer Code: <strong>5092-6611-6317-2086</strong></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
